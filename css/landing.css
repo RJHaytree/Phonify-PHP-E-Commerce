@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    background: #242424
+}
+
+#landing {
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#landing .logo {
+    background: url("../assets/images/logo-white.png") no-repeat center/100% auto;
+    height: 200px;
+    width: 450px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#landing .logo b {
+    font-size: 1.1em;
+}
+
+#landing .btn {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: relative;
+    color: #474747;
+    border-radius: 4px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#landing .btn-txt {
+    display: inline-block;
+    font-size: 78px;
+    height: 78px;
+    line-height: 78px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#landing .btn-text b {
+    font-size: 0.4em;
+}
+
+#landing .btn-txt small {
+    font-size: 15px;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: -20px;
+}
+
+#landing .btn:hover {
+    color: #ffffff;
+    text-shadow: 0 9px 12px rgba(0, 0, 0, 0.15);
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#landing .btn.btn-ios {
+    background-image: url("../assets/images/landing-apple.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-filter: grayscale(100%) brightness(50%);
+    -moz-filter: grayscale(100%) brightness(50%);
+    -o-filter: grayscale(100%) brightness(50%);
+    -ms-filter: grayscale(100%) brightness(50%);
+    filter: grayscale(100%) brightness(50%);
+
+}
+
+#landing .btn.btn-ios:hover {
+    -webkit-filter: grayscale(15%) ;
+    -moz-filter: grayscale(15%) brightness(80%);
+    -o-filter: grayscale(15%) brightness(80%);
+    -ms-filter: grayscale(15%) brightness(80%);
+    filter: grayscale(15%) brightness(80%); 
+}
+
+#landing .btn.btn-android {
+    background-image: url("../assets/images/landing-samsung.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    -webkit-filter: grayscale(100%) brightness(50%);
+    -moz-filter: grayscale(100%) brightness(50%);
+    -o-filter: grayscale(100%) brightness(50%);
+    -ms-filter: grayscale(100%) brightness(50%);
+    filter: grayscale(100%) brightness(50%);
+}
+
+#landing .btn.btn-android:hover {
+    -webkit-filter: grayscale(15%);
+    -moz-filter: grayscale(15%);
+    -o-filter: grayscale(15%);
+    -ms-filter: grayscale(15%);
+    filter: grayscale(15%); 
+}
+
+#landing .btn.btn-accessories {
+    background-image: url("../assets/images/landing-case.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-filter: grayscale(100%) brightness(50%);
+    -moz-filter: grayscale(100%) brightness(50%);
+    -o-filter: grayscale(100%) brightness(50%);
+    -ms-filter: grayscale(100%) brightness(50%);
+    filter: grayscale(100%) brightness(50%);
+}
+
+#landing .btn.btn-accessories:hover {
+    -webkit-filter: grayscale(15%);
+    -moz-filter: grayscale(15%);
+    -o-filter: grayscale(15%);
+    -ms-filter: grayscale(15%);
+    filter: grayscale(15%); 
+}
+
+#landing .btn.btn-repairkits {
+    background-image: url("../assets/images/landing-repair.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-filter: grayscale(100%) brightness(50%);
+    -moz-filter: grayscale(100%) brightness(50%);
+    -o-filter: grayscale(100%) brightness(50%);
+    -ms-filter: grayscale(100%) brightness(50%);
+    filter: grayscale(100%) brightness(50%);
+}
+
+#landing .btn.btn-repairkits:hover {
+    -webkit-filter: grayscale(15%);
+    -moz-filter: grayscale(15%);
+    -o-filter: grayscale(15%);
+    -ms-filter: grayscale(15%);
+    filter: grayscale(15%); 
+}
+
+#landing .pseudolink {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    #landing {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    #landing .logo {
+        width: calc(100% - 50px);
+        position: relative;
+        top: 0;
+        bottom: 0;
+        margin-bottom: 30px;
+    }
+
+    #landing .btn {
+        width: 100%;
+        max-width: 900px;
+        display: block;
+        margin: 0 auto;
+        height: 150px;
+    }
+
+    #landing .btn .btn-txt {
+        font-size: 56px;
+        line-height: 56px;
+    }
+
+    #landing .btn .btn-txt small {
+        margin-top: -20px;
+        font-size: 12px;
+    }
+
+    #landing .btn:first-child {
+        margin-top: 50px;
+    }
+}
